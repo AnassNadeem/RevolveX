@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RevolveX | Digital Marketing Agency</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="{{ url_for('static', filename='images/Logo.png') }}" type="png">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cuprum:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+      <a href="{{ url_for('indexs') }}" class="logos">RevolveX</a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="wrapper">
+          <a href="#" class="logos">RevolveX</a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="{{ url_for('indexs') }}" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="{{ url_for('services') }}" class="navbar-link" data-nav-link>Services</a>
+          </li>
+
+          <li>
+            <a href="{{ url_for('work') }}" class="navbar-link" data-nav-link>Work</a>
+          </li>
+
+          <li>
+            <a href="{{ url_for('about') }}" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li>
+            <a href="{{ url_for('contact') }}" class="navbar-link" data-nav-link>Contact Us</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <a href="{{ url_for('contact') }}" class="btn-outline">Get in touch</a>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+<!-- 
+        - #SERVICE
+      -->
+      <section class="section service" id="services" aria-label="service">
+        <div class="container">
+
+          <p class="section-subtitle text-center">-What We Offer-</p>
+
+          <h2 class="h2 section-title text-center">Explore our Services</h2>
+
+          <p class="section-text text-center">
+            Your business deserves clarity. Discover the various ways we can help you, below. Interested in just one thing? All of our services are available – just ask.
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card has-after">
+
+                <figure class="card-icon">
+                  <img src="{{ url_for('static', filename='images/Digital.png') }}" width="140" height="140" loading="lazy"
+                    alt="Digital Strategy" class="img">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Digital Strategy</h3>
+
+                  <p class="card-text">
+                    It's more than just platform performance. We explore your business goals, marketing history, and untapped brand potential.
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <span class="span">Read More</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card has-after">
+
+                <figure class="card-icon">
+                  <img src="{{ url_for('static', filename='images/Brand S.png') }}" width="140" height="140" loading="lazy" alt="Brand Strategy"
+                    class="img">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Brand Strategy</h3>
+
+                  <p class="card-text">
+                    Let's craft a Brand Strategy that resonates now and evolves seamlessly into the future.
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <span class="span">Read More</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card has-after">
+
+                <figure class="card-icon">
+                  <img src="{{ url_for('static', filename='images/Paid Search.png') }}" width="140" height="140" loading="lazy"
+                    alt="Paid Search" class="img">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Paid Search</h3>
+
+                  <p class="card-text">
+                    In a competitive marketplace, precision is key. Our team blends innovation and insight to craft paid search campaigns.
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <span class="span">Read More</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card has-after">
+
+                <figure class="card-icon">
+                  <img src="{{ url_for('static', filename='images/Socialmedia.png') }}" width="140" height="140" loading="lazy" alt="Social Media"
+                    class="img">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Social Media</h3>
+
+                  <p class="card-text">
+                    If you want ongoing social returns, you need a system that does it all, from paid media to big-picture goals, and beyond.
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <span class="span">Read More</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card has-after">
+
+                <figure class="card-icon">
+                  <img src="{{ url_for('static', filename='images/Content Marketing.png') }}" width="140" height="140" loading="lazy"
+                    alt="Content Marketing" class="img">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Content Marketing</h3>
+
+                  <p class="card-text">
+                    Building a resonant brand identity demands cohesive messaging at its core.
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <span class="span">Read More</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card has-after">
+
+                <figure class="card-icon">
+                  <img src="{{ url_for('static', filename='images/Web 3.png') }}" width="140" height="140" loading="lazy"
+                    alt="Web 3" class="img">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Web 3</h3>
+
+                  <p class="card-text">
+                    The future of the internet is here. We're ready to help you bridge the gap between web2 and web3.
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <span class="span">Read More</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card has-after">
+
+                <figure class="card-icon">
+                  <img src="{{ url_for('static', filename='images/SEO.png') }}" width="140" height="140" loading="lazy"
+                    alt="SEO" class="img">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">SEO</h3>
+
+                  <p class="card-text">
+                    Don't let your valuable content fade into oblivion. We specialize in SEO strategies that elevate your visibility.
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <span class="span">Read More</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card has-after">
+
+                <figure class="card-icon">
+                  <img src="{{ url_for('static', filename='images/ecommerce-strategy.png') }}" width="140" height="140" loading="lazy"
+                    alt="eCommerce strategy" class="img">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">eCommerce strategy</h3>
+
+                  <p class="card-text">
+                    Your eCommerce presence is a powerful asset. We refine and enhance your existing setup and maximize your ROI through tailored strategies.
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <span class="span">Read More</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card has-after">
+
+                <figure class="card-icon">
+                  <img src="{{ url_for('static', filename='images/UXUI.png') }}" width="140" height="140" loading="lazy"
+                    alt="UX/UI Design" class="img">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">UX/UI Design</h3>
+
+                  <p class="card-text">
+                    Our UX design experts will guide them towards your goals and keep them coming back for more.
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <span class="span">Read More</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card has-after">
+
+                <figure class="card-icon">
+                  <img src="{{ url_for('static', filename='images/CustomWeb.png') }}" width="140" height="140" loading="lazy"
+                    alt="Custom Web Development" class="img">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Custom Web Development</h3>
+
+                  <p class="card-text">
+                    To bring your unique ideas to life online, we design, build, and optimize to exceed expectations.
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <span class="span">Read More</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+          <section class="last">
+            <div class="container">
+              <h1 class="h2 text-center">Want to launch your brand into  </h1>
+              <h1 class="h2 text-center"> future? Strap in and let's go!</h1>
+            </div>
+          </section>
+          <div class="btn-group">
+          <a href="{{ url_for('contact') }}" class="btn btn-primary">Get Started</a>
+          </div>
+
+        </div>
+      </section>
+        
+ 
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logoss">RevolveX</a>
+
+          <p class="footer-text">
+            Ready to speak with a marketing expert? Contact us
+          </p>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Enter your email" required class="email-field">
+
+            <button type="submit" class="form-btn">
+              <ion-icon name="paper-plane" aria-hidden="true"></ion-icon>
+            </button>
+          </form>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Our Services</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Digital Strategy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Brand Strategy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Paid Search</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Social Media</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Content MArketing</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Company</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Company</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Our Services</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Our Work</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Contact Us</p>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="location" aria-hidden="true"></ion-icon>
+
+            <address class="contact-link address">
+               4589 Lahore. Punjab,  Pakistan 94000
+            </address>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="call" aria-hidden="true"></ion-icon>
+
+            <a href="tel:+7894631546876" class="contact-link">+92358484948</a>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="mail" aria-hidden="true"></ion-icon>
+
+            <a href="mailto:info@hoolix.com" class="contact-link">info@RevolveX.com</a>
+          </li>
+
+          <li class="footer-item">
+            <ul class="social-list">
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-pinterest"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 RevolveX | All Rights Reserved <a href="#" class="copyright-link"></a>
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Terms of Use</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="{{ url_for('static', filename='/script.js') }}"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

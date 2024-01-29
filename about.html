@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RevolveX | Digital Marketing Agency</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="{{ url_for('static', filename='images/Logo.png') }}" type="png">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cuprum:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+      <a href="{{ url_for('indexs') }}" class="logos">RevolveX</a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="wrapper">
+          <a href="#" class="logos">RevolveX</a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="{{ url_for('indexs') }}" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="{{ url_for('services') }}" class="navbar-link" data-nav-link>Services</a>
+          </li>
+
+          <li>
+            <a href="{{ url_for('work') }}" class="navbar-link" data-nav-link>Work</a>
+          </li>
+
+          <li>
+            <a href="{{ url_for('about') }}" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li>
+            <a href="{{ url_for('contact') }}" class="navbar-link" data-nav-link>Contact Us</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <a href="{{ url_for('contact') }}" class="btn-outline">Get in touch</a>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+    
+
+    
+      <!-- 
+        - #About
+      -->
+
+      <section class="section hero" id="home" aria-label="hero">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">Hi, we're RevolveX</h1>
+
+            <p class="hero-text">
+              You put passion and pride into what you do. We like that about you. Scroll down and see why you should like us, too.
+            </p>
+            <div class="rev">
+              <button class="flex-btn">
+                <li>
+                  <a href="{{ url_for('reviews') }}" class="span" data-nav-link>See  our Feedbacks</a>
+                </li>
+              </button>
+             </div>
+
+          </div>
+
+          <figure class="hero-banner has-before img-holder" style="--width: 850; --height: 800;">
+            <img src="{{ url_for('static', filename='images/about/aboutus1.jpg') }}" width="650" height="650" alt="hero banner" class="img-cover">
+          </figure>
+
+        </div>
+      </section>
+
+
+      <section class="abouts" id="abouts">
+        <div class="container">
+          <h2 class="h2 section-title text-center">-Why you'll trust us-</h2>
+
+          <div class="abouts-top">
+
+            <figure class="abouts-banner">
+              <img src="{{ url_for('static', filename='images/about/about-banner-1.png') }}" alt="Seo illustration">
+            </figure>
+
+            <div class="abouts-content">
+
+              <h3 class="h2 section-title">Unique approach</h3>
+
+              <p class="section-text">
+                Any good agency can deliver on the challenge you bring them. 
+                But, a strategic agency works with you to uncover the true reason behind your challenge, 
+                the one that is blocking your business's growth.
+              </p>
+
+              <p class="section-text">
+                At Hoolix, you’ll benefit from our four-phased approach. 
+                This method shows us your whole organization, allowing us to identify the best strategy, 
+                the tactics that will bring you success, and how you can improve upon that success.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="abouts-bottom">
+
+            <figure class="abouts-banner">
+              <img src="{{ url_for('static', filename='images/about/about-banner-2.png') }}" alt="Seo illustration">
+            </figure>
+
+            <div class="abouts-content">
+
+              <h3 class="h2 about-bottom-title">Service mix</h3>
+
+              <p class="section-text">
+                Consistency breeds confidence — make every touchpoint your audience experiences the same with our suite of service offerings. 
+                From Creative, to Strategy, Development and Marketing, take care of your holistic digital marketing needs in one place.
+              </p>
+
+              <p class="section-text">
+                Just looking for one, specific digital service? You can invest in one at a time, obligation-free.
+              </p>
+
+            </div>
+
+          </div>
+
+        <div class="wrapper">
+          <h2>Meet the team</h2>
+          <hr>
+          <div class="containers">
+            <div class="team-mem">
+              <img class="imagss" src="{{ url_for('static', filename='images/team/TM 5.png') }}" alt="">
+              <h4>Lauren Pybus</h4>
+              <p>CEO</p>
+            </div>
+
+            <div class="team-mem">
+              <img class="imagss" src="{{ url_for('static', filename='images/team/TM 2.png') }}" alt="">
+              <h4>Parker Mason</h4>
+              <p>VP, Growth & Development</p>
+            </div>
+
+            <div class="team-mem">
+              <img class="imagss" src="{{ url_for('static', filename='images/team/TM 3.png') }}" alt="">
+              <h4>Raelene Thomas</h4>
+              <p>VP, Finance & Operations</p>
+            </div>
+
+            <div class="team-mem">
+              <img class="imagss" src="{{ url_for('static', filename='images/team/TM 4.png') }}" alt="">
+              <h4>Geoff Ravenor</h4>
+              <p>VP, Sales & Marketing</p>
+            </div>
+
+          </div>
+          </div>
+        </div>
+      </section>
+      
+      
+
+
+
+     <!-- 
+        - #FAQ
+      -->
+
+      <section class="section faq" aria-label="frequently asked questions">
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">Discover Frequently Asked Questions?</h2>
+            
+            <div class="btn-group">
+              <a href="{{ url_for('contact') }}" class="btn btn-primary">Work Together</a>
+            </div>
+          </div>
+            
+          <ul class="grid-list">
+
+            <li>
+              <div class="faq-card">
+
+                <button class="card-action" data-accordion-action>
+                  <h3 class="h3 card-title">
+                    01. Does my business really need digital marketing?
+                  </h3>
+
+                  <div class="action-icon">
+                    <ion-icon name="add-outline" aria-hidden="true" class="open"></ion-icon>
+                    <ion-icon name="remove-outline" aria-hidden="true" class="close"></ion-icon>
+                  </div>
+                </button>
+
+                <div class="card-content">
+                  <p>
+                    Digital marketing is the promotion of your brand and the service you need to battle against competitors that do not only 
+                    exist locally, but now exist nationally and internationally against your business. With a strong online presence and
+                     digital marketing strategy, the opportunity to scale your business successfully is enormous. Digital marketing presents 
+                     opportunity for exponential business growth and return multiples that are better than any other advertising opportunity.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="faq-card">
+
+                <button class="card-action" data-accordion-action>
+                  <h3 class="h3 card-title">
+                    02. What kind of support can I expect from your agency to benefit my business?
+                  </h3>
+
+                  <div class="action-icon">
+                    <ion-icon name="add-outline" aria-hidden="true" class="open"></ion-icon>
+                    <ion-icon name="remove-outline" aria-hidden="true" class="close"></ion-icon>
+                  </div>
+                </button>
+
+                <div class="card-content">
+                  <p>
+                    At Hoolix, we pride ourselves on providing comprehensive support to our clients. 
+                    We work closely with you to understand your business objectives, target audience, and unique challenges.
+                    Our team of experts will guide you through the entire process, from initial strategy development to implementation and 
+                    ongoing optimisation. We offer regular communication, performance reporting, and analysis to keep you informed about
+                    the progress and success of your digital marketing campaigns.
+
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="faq-card">
+
+                <button class="card-action" data-accordion-action>
+                  <h3 class="h3 card-title">
+                    03. What is your pricing model or how do you charge for services?
+                  </h3>
+
+                  <div class="action-icon">
+                    <ion-icon name="add-outline" aria-hidden="true" class="open"></ion-icon>
+                    <ion-icon name="remove-outline" aria-hidden="true" class="close"></ion-icon>
+                  </div>
+                </button>
+
+                <div class="card-content">
+                  <p>
+                    The pricing model for our digital marketing services typically depends on the specific services and engagement model. 
+                    We offer flexible options that can be customised to meet your business needs. This includes project-based billing, 
+                    retainer-based agreements, or hourly rates, depending on the scope and duration of the project. As for contracts, 
+                    we provide clear and transparent agreements that outline the terms and conditions of our services, ensuring both parties 
+                    have a mutual understanding and are aligned on the scope of work.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="faq-card">
+
+                <button class="card-action" data-accordion-action>
+                  <h3 class="h3 card-title">
+                    04. Who is responsible for creating the content your agency provides?
+                  </h3>
+
+                  <div class="action-icon">
+                    <ion-icon name="add-outline" aria-hidden="true" class="open"></ion-icon>
+                    <ion-icon name="remove-outline" aria-hidden="true" class="close"></ion-icon>
+                  </div>
+                </button>
+
+                <div class="card-content">
+                  <p>
+                    Content creation for our marketing agency website is a collaborative effort involving skilled professionals such as 
+                    content writers, copywriters, content strategists, graphic designers, SEO specialists, marketing managers, subject matter 
+                    experts, and client services/account managers. Content writers and copywriters craft compelling text, while content 
+                    strategists develop a cohesive plan aligned with our goals. Graphic designers create visually engaging assets,
+                    SEO specialists optimize content for search engines, and marketing managers oversee the entire process.
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="faq-card">
+
+                <button class="card-action" data-accordion-action>
+                  <h3 class="h3 card-title">
+                    05. How much involvement is required from the business?
+                  </h3>
+
+                  <div class="action-icon">
+                    <ion-icon name="add-outline" aria-hidden="true" class="open"></ion-icon>
+                    <ion-icon name="remove-outline" aria-hidden="true" class="close"></ion-icon>
+                  </div>
+                </button>
+
+                <div class="card-content">
+                  <p>
+                    The level of involvement required from the business in the creation of a marketing agency website varies based on factors 
+                    such as the agency's approach, client preferences, and the nature of the project. Typically, a high level of involvement is
+                    encouraged at the beginning of the collaboration. This involves in-depth discussions to understand the business's goals,
+                    target audience, brand identity, and key messages. Ongoing collaboration is crucial for feedback on drafts, approval of
+                     key messages, and ensuring alignment with the brand's values.
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+  
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logoss">RevolveX</a>
+
+          <p class="footer-text">
+            Ready to speak with a marketing expert? Contact us
+          </p>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Enter your email" required class="email-field">
+
+            <button type="submit" class="form-btn">
+              <ion-icon name="paper-plane" aria-hidden="true"></ion-icon>
+            </button>
+          </form>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Our Services</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Digital Strategy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Brand Strategy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Paid Search</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Social Media</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Content MArketing</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Company</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Company</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Our Services</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Our Work</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Contact Us</p>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="location" aria-hidden="true"></ion-icon>
+
+            <address class="contact-link address">
+               4589 Lahore. Punjab,  Pakistan 94000
+            </address>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="call" aria-hidden="true"></ion-icon>
+
+            <a href="tel:+7894631546876" class="contact-link">+92358484948</a>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="mail" aria-hidden="true"></ion-icon>
+
+            <a href="mailto:info@hoolix.com" class="contact-link">info@RevolveX.com</a>
+          </li>
+
+          <li class="footer-item">
+            <ul class="social-list">
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-pinterest"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 RevolveX | All Rights Reserved <a href="#" class="copyright-link"></a>
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Terms of Use</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="{{ url_for('static', filename='/script.js') }}"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
